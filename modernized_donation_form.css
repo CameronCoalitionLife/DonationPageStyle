@@ -1,0 +1,166 @@
+
+/* General Form Styling */
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    background-color: #f9fafb;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styling */
+div.IATS_Div {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section */
+label.IATS_EventTitle {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #4a4a4a;
+    text-align: center;
+}
+
+span.IATS_EventDescription {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #666;
+    text-align: center;
+}
+
+/* Amount Selection */
+div.IATS_AmountDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+span.IATS_AmountSpan {
+    font-size: 1rem;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+span.IATS_AmountSpan:hover {
+    background-color: #e8f4ff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Toggle Buttons for One-time/Monthly */
+div.IATS_ToggleSection {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+button.IATS_ToggleButton {
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    color: #333;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+button.IATS_ToggleButton.active {
+    background-color: #0070f3;
+    color: #ffffff;
+}
+
+/* Input Fields */
+input.IATS_PaymentInputField, select.IATS_PaymentInputField, textarea.IATS_PaymentInputField {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input.IATS_PaymentInputField:focus {
+    outline: none;
+    border-color: #0070f3;
+    box-shadow: 0 0 4px rgba(0, 112, 243, 0.5);
+}
+
+/* Checkbox and Radio Buttons */
+label.IATS_RadioPaymentLabel, label.IATS_RadioAmtLabel {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+input.IATS_RadioPaymentButton, input.IATS_RadioAmtButton {
+    margin-right: 10px;
+}
+
+/* Buttons */
+button.IATS_Action {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button.IATS_Action:hover {
+    background-color: #218838;
+    box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+}
+
+/* Footer */
+div.IATS_FooterDiv {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 20px;
+}
+
+a {
+    color: #0070f3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Secure Message */
+div.IATS_SecureDataDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 15px;
+}
+
+div.IATS_SecureDataDiv img {
+    margin-right: 5px;
+}
